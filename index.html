@@ -8,11 +8,11 @@
 <script type="text/javascript">
     let person_age, age_adjust;
 
-    person_age = prompt("Hi, what's ur age?");
+    person_age = Number(prompt("Hi, what's ur age?"));
     // person_age = 1;
 
     if      (person_age < 0)                        { alert('Помилка') }
-    else if (1 <= person_age && person_age <= 10)   { age_adjust = person_age; }
+    else if (1 <= person_age && person_age <= 20)   { age_adjust = person_age; }
     else if (21 <= person_age && person_age <= 99)  { age_adjust = person_age % 10; }
     else if (person_age > 99)                       { alert("It's too much"); }
 
