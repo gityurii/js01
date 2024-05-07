@@ -20,12 +20,7 @@ var arr = [
     },
     ];
 
-var str1 = "test.te.st@gmail.com";
-var str2 = "dmitro.porohov@yahoo.com";
-var str3 = "andrii@mail.ru";
-
 var pattern = /^[a-zA-Z0-9]+\.?[a-zA-Z0-9]+@(yahoo.com|gmail.com)$/;
-
 
 for (let arrElement of arr) {
     if (pattern.test(arrElement.email) === true) {
